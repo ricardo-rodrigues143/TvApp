@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/tvholder.dart';
-import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
@@ -20,10 +21,7 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-List<TvLink> _elements = [
-  TvLink("Sport Tv 1", "https://es-cdn.com/stream/clappr.html?c=stv1"),
-  TvLink("Sport Tv 1", "https://es-cdn.com/stream/clappr.html?c=stv1"),
-];
+List<TvLink> _elements;
 
 class _MyAppState extends State<MyApp> {
   @override
@@ -35,8 +33,15 @@ class _MyAppState extends State<MyApp> {
   Widget listView;
   final ScrollController _scrollController = ScrollController();
 
-  void initList() {
-    SystemChrome.setEnabledSystemUIOverlays([]);
+  Future<void> initList() async {
+    final response = await http.get(Uri.parse(
+        'https://raw.githubusercontent.com/ricardo-rodrigues143/TvApp/main/App/tvLinks.json?token=AGDOBQKY2CODJTOO3V2A7V3BMHIQ2'));
+
+    Iterable l = json.decode(response.body);
+    for (var item in l) {
+      _elements.add(new TvLink(item['nome'], item['link']));
+    }
+
     listView = ListView.separated(
         separatorBuilder: (BuildContext context, int index) => const Divider(),
         controller: _scrollController,

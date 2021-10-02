@@ -1,4 +1,10 @@
-{
-    "Sport Tv 1": "https://es-cdn.com/stream/clappr.html?c=stv1",
-    "Sport Tv 2": "https://es-cdn.com/stream/clappr.html?c=stv2"
-}
+[
+    {
+        "nome": "Sport Tv 1",
+        "link": "https://es-cdn.com/stream/clappr.html?c=stv1"
+    },
+    {
+        "nome": "Sport Tv 2",
+        "link": "https://es-cdn.com/stream/clappr.html?c=stv2"
+    }
+]
