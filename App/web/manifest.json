@@ -1,11 +1,11 @@
 {
-    "name": "myapp",
-    "short_name": "myapp",
+    "name": "tvapixa",
+    "short_name": "tvapixa",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Televisão do Apixa",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

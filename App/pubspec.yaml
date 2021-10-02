@@ -1,5 +1,5 @@
-name: myapp
-description: A new Flutter project.
+name: tvapixa
+description: Televisão do Apixa.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -31,6 +31,7 @@ dependencies:
   webview_windows: ^0.0.7
   group_list_view: ^1.1.1
   http: ^0.13.3
+  msix: ^2.1.3
 
 dev_dependencies:
   flutter_test:
@@ -77,3 +78,17 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+msix_config:
+  display_name: Tv Do Apixa
+  publisher_display_name: Tv Do Apixa
+  identity_name: ThyrsoP2H
+  msix_version: 1.0.0.0
+  certificate_path: C:\Program Files\OpenSSL-Win64\bin\CERTIFICATE.pfx
+  certificate_password: 1235
+  publisher: E=ThyrsoP2h, CN=ThyrsoP2h, OU=ThyrsoP2H, O=ThyrsoP2H, L=Portugal, S=Portugal, C=PT
+  logo_path: C:\Users\Ricardo\Desktop\Projetos\app.png
+  start_menu_icon_path: C:\Users\Ricardo\Desktop\Projetos\app.png
+  tile_icon_path: C:\Users\Ricardo\Desktop\Projetos\app.png
+  icons_background_color: transparent
+  architecture: x64
+  capabilities: 'internetClient'

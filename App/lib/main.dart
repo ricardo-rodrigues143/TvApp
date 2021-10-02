@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/tvholder.dart';
+import 'package:tvapixa/tvholder.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -21,7 +21,7 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-List<TvLink> _elements;
+List<TvLink> _elements = [];
 
 class _MyAppState extends State<MyApp> {
   @override
@@ -88,7 +88,9 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text("TV DO APIXA"),
         ),
-        body: Scrollbar(child: listView),
+        body: listView == null
+            ? Center(child: CircularProgressIndicator())
+            : Scrollbar(child: listView),
         backgroundColor: Color.fromRGBO(16, 16, 16, 1),
       ),
     );

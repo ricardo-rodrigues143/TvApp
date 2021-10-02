@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/main.dart';
+import 'package:tvapixa/main.dart';
 import 'dart:async';
 
 import 'package:webview_windows/webview_windows.dart';
