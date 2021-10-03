@@ -82,7 +82,7 @@ msix_config:
   display_name: Tv Do Apixa
   publisher_display_name: Tv Do Apixa
   identity_name: ThyrsoP2H
-  msix_version: 1.0.0.0
+  msix_version: 1.0.3.0
   certificate_path: C:\Program Files\OpenSSL-Win64\bin\CERTIFICATE.pfx
   certificate_password: 1235
   publisher: E=ThyrsoP2h, CN=ThyrsoP2h, OU=ThyrsoP2H, O=ThyrsoP2H, L=Portugal, S=Portugal, C=PT

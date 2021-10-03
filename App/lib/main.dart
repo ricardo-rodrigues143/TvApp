@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
       navigatorKey: navigatorKey,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("TV DO APIXA"),
+          title: Text("Televisão do Apixa"),
         ),
         body: listView == null
             ? Center(child: CircularProgressIndicator())

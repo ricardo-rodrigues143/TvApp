@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\App",
+    "\\App\\windows"
   ],
+  "SelectedNode": "\\App\\windows\\out",
   "PreviewInSolutionExplorer": false
 }
