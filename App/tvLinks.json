@@ -6,5 +6,9 @@
     {
         "nome": "Sport Tv 2",
         "link": "https://es-cdn.com/stream/clappr.html?c=stv2"
+    },
+    {
+        "nome": "Eleven Sports 1",
+        "link": "https://es-cdn.com/stream/clappr.html?c=es1"
     }
 ]
